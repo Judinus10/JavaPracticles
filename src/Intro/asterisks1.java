@@ -1,3 +1,5 @@
+package Intro;
+
 import java.util.Scanner;
 public class asterisks1{
     public static void main(String[] args){
