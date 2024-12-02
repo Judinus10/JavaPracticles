@@ -128,6 +128,3 @@ To contribute:
 - **Email**: jjudinas@gmail.com  
 - **GitHub**: (https://github.com/judinus10)  
 
----
-
-This README structure provides a clear and professional overview of your project. Let me know if you'd like to customize any section further!
