@@ -43,7 +43,7 @@ public class SumOfDigits {
         int sum = 0;
         for (int tempFor = Math.abs(num); tempFor != 0; tempFor /= 10) {
             int digit = tempFor % 10; // Extract the last digit
-            sum += digit;             // Add the digit to the sum
+            sum += digit;
         }
         return sum;
     }
