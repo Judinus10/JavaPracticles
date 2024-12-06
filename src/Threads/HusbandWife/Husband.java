@@ -11,13 +11,11 @@ public class Husband implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 0; i < 5; i++) { // Perform 5 withdrawals
-            synchronized (account) {
-                account.withdraw(BigDecimal.valueOf(10000));
-                System.out.println(Thread.currentThread().getName() + " withdrew 10000. Current Balance: " + account.getBalance());
-            }
+        for (int i = 0; i < 5; i++) { // Withdraw 5 times
+
+            account.withdraw(BigDecimal.valueOf(10000));
             try {
-                Thread.sleep(1500); // Simulate some delay
+                Thread.sleep(1500); // Simulate delay
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
