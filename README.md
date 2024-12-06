@@ -38,6 +38,23 @@ Contains exercises to master looping constructs (`for` and `while`).
 4. **`Sum.java`**  
    - Prompt the user for a number `n` and calculate the sum of numbers from 1 to `n` using both `for` and `while` loops.  
 
+5. **`FibonacciSequence.java `**
+   - Generate the Fibonacci sequence up to n terms.
+   
+6.  **`MultiplicationTable.java `**
+   - Generate and print the multiplication table of a number entered by the user.
+
+7. **`ReverseNumber.java `**
+   - Reverse the digits of a given integer using a loop.
+
+8. **`PrimeNumberCheck.java `**
+   - Check if a number is prime or not.
+
+9. **`CountDigits.java `**
+   - Count the number of digits in an integer.
+
+10. **`SumOfDigits.java `**
+    - Calculate the sum of the digits of a number.
 ---
 
 ### **Package: Intro**  
@@ -46,19 +63,16 @@ Contains basic introductory programs covering conditional logic, simple patterns
 1. **`EvenNumbers.java`**  
    - Prompt the user for a number and check if it is even or odd using a `for` loop.  
 
-2. **`Fibonacci.java`**  
-   - Prompt the user for a number and print the Fibonacci sequence up to the given number using a `for` loop.  
-
-3. **`Greeting.java`**  
+2. **`Greeting.java`**  
    - Prompt the user for their name and display a greeting message.  
 
-4. **`SumTwoNumbers.java`**  
+3. **`SumTwoNumbers.java`**  
    - Prompt the user for two numbers and display their sum.  
 
-5. **`Asterisks1.java`**  
+4. **`Asterisks1.java`**  
    - Print a pattern of asterisks (`*`), such as a triangle or square.  
 
-6. **`NumberClarification.java`**  
+5. **`NumberClarification.java`**  
    - Prompt the user for a number and determine if it is even, odd, or zero using a `for` loop and `if` statements.  
 
 ---
@@ -81,6 +95,17 @@ Contains exercises to practice array operations such as summation, finding max/m
 5. **`SearchElement.java`**  
    - Search for a specific element in a pre-defined array based on user input.  
 
+6. **`ReverseArray.java`**
+   - Reverse the elements of an array using a loop.
+   
+7. `**CountEvenOdd.java`**
+   - Count how many even and odd numbers are present in an array.
+   
+8. `**BubbleSort.java`**
+   - Implement the Bubble Sort algorithm to sort an array in ascending order.
+   
+9. `**FindSecondLargest.java`**
+   - Find the second largest number in an array without sorting.
 ---
 
 ## 🛠️ Installation  
