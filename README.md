@@ -1,6 +1,6 @@
 
-# Java  Exercises Project  
-*A collection of Java exercises to practice loops, arrays, and basic programming concepts.*  
+# Java Exercises Project  
+*A collection of Java exercises to practice loops, arrays, multithreading, and basic programming concepts.*  
 
 ---
 
@@ -17,7 +17,7 @@
 
 ## 📖 About the Project  
 
-This project contains three packages, **Loops**, **Intro**, and **Arrays**, each designed to help beginners practice core Java concepts such as loops, conditional statements, arrays, and input/output operations. The exercises cover real-world scenarios like factorials, Fibonacci sequences, array operations, and simple patterns.  
+This project contains multiple packages that cover a variety of Java exercises. The exercises include loops, arrays, and multithreading concepts. Each exercise is designed to help you enhance your problem-solving skills and understanding of core Java.  
 
 ---
 
@@ -56,24 +56,7 @@ Contains exercises to master looping constructs (`for` and `while`).
 10. **`SumOfDigits.java `**
     - Calculate the sum of the digits of a number.
 ---
-
-### **Package: Intro**  
-Contains basic introductory programs covering conditional logic, simple patterns, and input/output.  
-
-1. **`EvenNumbers.java`**  
-   - Prompt the user for a number and check if it is even or odd using a `for` loop.  
-
-2. **`Greeting.java`**  
-   - Prompt the user for their name and display a greeting message.  
-
-3. **`SumTwoNumbers.java`**  
-   - Prompt the user for two numbers and display their sum.  
-
-4. **`Asterisks1.java`**  
-   - Print a pattern of asterisks (`*`), such as a triangle or square.  
-
-5. **`NumberClarification.java`**  
-   - Prompt the user for a number and determine if it is even, odd, or zero using a `for` loop and `if` statements.  
+  
 
 ---
 
@@ -95,17 +78,48 @@ Contains exercises to practice array operations such as summation, finding max/m
 5. **`SearchElement.java`**  
    - Search for a specific element in a pre-defined array based on user input.  
 
-6. **`ReverseArray.java`**
-   - Reverse the elements of an array using a loop.
-   
-7. `**CountEvenOdd.java`**
-   - Count how many even and odd numbers are present in an array.
-   
-8. `**BubbleSort.java`**
-   - Implement the Bubble Sort algorithm to sort an array in ascending order.
-   
-9. `**FindSecondLargest.java`**
-   - Find the second largest number in an array without sorting.
+6. **`ReverseArray.java`**  
+   - Reverse the elements of an array using a loop.  
+
+7. **`CountEvenOdd.java`**  
+   - Count how many even and odd numbers are present in an array.  
+
+8. **`BubbleSort.java`**  
+   - Implement the Bubble Sort algorithm to sort an array in ascending order.  
+
+9. **`FindSecondLargest.java`**  
+   - Find the second largest number in an array without sorting.  
+
+---
+
+### **Package: Thread**  
+Contains exercises to practice multithreading concepts such as thread creation, synchronization, and concurrent tasks.  
+
+#### **Classes**  
+1. **`CreateThread1.java`**  
+   - Demonstrates thread creation by extending the `Thread` class.  
+
+2. **`CreateThread2.java`**  
+   - Demonstrates thread creation by implementing the `Runnable` interface.  
+
+3. **`CreateThread3.java`**  
+   - Demonstrates thread creation using a lambda function.  
+
+#### **Sub-Package: HusbandWife**  
+Simulates a real-world scenario where multiple threads (husband and wife) access a common bank account.  
+
+1. **`BankAccount.java`**  
+   - Represents a shared bank account with synchronized methods to ensure thread safety.  
+
+2. **`Husband.java`**  
+   - A thread class that simulates a husband withdrawing money from the account.  
+
+3. **`Wife.java`**  
+   - A thread class that simulates a wife depositing money into the account.  
+
+4. **`Main.java`**  
+   - The main driver class to execute the threads and simulate concurrent access to the shared bank account.  
+
 ---
 
 ## 🛠️ Installation  
@@ -126,15 +140,15 @@ Contains exercises to practice array operations such as summation, finding max/m
 
 1. Compile the project:  
    ```bash
-   javac -d . Loops/*.java Intro/*.java Arrays/*.java
+   javac -d . Loops/*.java Arrays/*.java Thread/*.java Thread/HusbandWife/*.java
    ```  
 2. Run any class by specifying its fully qualified name:  
    ```bash
-   java Loops.EvenAndOdd
+   java Thread.CreateThread1
    ```  
    or  
    ```bash
-   java Arrays.Sum
+   java Thread.HusbandWife.Main
    ```  
 
 ---
