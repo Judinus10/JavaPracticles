@@ -14,9 +14,9 @@
 //}
 
 package Threads.ProducerConsumer;
-public class Producer implements Runnable{
+public class Mother implements Runnable{
     Source plate;
-    public Producer(Source plate){
+    public Mother(Source plate){
         this.plate=plate;
     }
     @Override

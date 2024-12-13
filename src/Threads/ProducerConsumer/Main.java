@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         Source plate = new Source();
-        Runnable producer = new Producer(plate);
-        Runnable consumer = new Consumer(plate);
+        Runnable producer = new Mother(plate);
+        Runnable consumer = new Child(plate);
 
         Thread producerThread = new Thread(producer , "producer");
         //Where the initial thread is created
