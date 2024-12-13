@@ -21,104 +21,83 @@ This project contains multiple packages that cover a variety of Java exercises. 
 
 ---
 
-## 📦 Packages and Classes  
+# Java Projects Repository
 
-### **Package: Loops**  
-Contains exercises to master looping constructs (`for` and `while`).  
-
-1. **`EvenAndOdd.java`**  
-   - Find and print all even or odd numbers between 1 and 50 using both `for` and `while` loops.  
-
-2. **`Factorials.java`**  
-   - Prompt the user for a number and calculate its factorial using both `for` and `while` loops.  
-
-3. **`NumberPrint.java`**  
-   - Print numbers from 1 to 10 using both `for` and `while` loops.  
-
-4. **`Sum.java`**  
-   - Prompt the user for a number `n` and calculate the sum of numbers from 1 to `n` using both `for` and `while` loops.  
-
-5. **`FibonacciSequence.java `**
-   - Generate the Fibonacci sequence up to n terms.
-   
-6.  **`MultiplicationTable.java `**
-   - Generate and print the multiplication table of a number entered by the user.
-
-7. **`ReverseNumber.java `**
-   - Reverse the digits of a given integer using a loop.
-
-8. **`PrimeNumberCheck.java `**
-   - Check if a number is prime or not.
-
-9. **`CountDigits.java `**
-   - Count the number of digits in an integer.
-
-10. **`SumOfDigits.java `**
-    - Calculate the sum of the digits of a number.
----
-  
+This repository contains various Java packages and exercises grouped into categories based on topics. The project covers fundamental Java concepts such as arrays, loops, multithreading, and thread synchronization, as well as advanced concepts like thread states and concurrent programming.
 
 ---
 
-### **Package: Arrays**  
-Contains exercises to practice array operations such as summation, finding max/min, and searching elements.  
+## Package Overview
 
-1. **`Sum.java`**  
-   - Prompt the user for an array length and elements, then calculate and display the sum of the elements.  
+### 1. **Arrays**
+This package includes exercises to manipulate and process arrays:
+- **Sum.java**: Calculate the sum of array elements.
+- **FindMaxAndMin.java**: Find the maximum and minimum element in an array.
+- **PrintArray1.java**: Print array elements using two methods (enhanced for-loop and standard for-loop).
+- **PrintArray2.java**: Print array elements in a formatted structure.
+- **SearchElement.java**: Search for an element in a predefined array.
+- **ReverseArray.java**: Reverse the elements of an array using a loop.
+- **CountEvenOdd.java**: Count even and odd numbers in an array.
+- **SortArray.java**: Implement the Bubble Sort algorithm to sort an array.
+- **SecondLargestElement.java**: Find the second largest number in an array without sorting.
 
-2. **`FindMaxAndMin.java`**  
-   - Find and print the maximum and minimum elements of a user-defined array.  
+### 2. **Loops**
+This package contains exercises related to loops:
+- **MultiplicationTable.java**: Generate and print the multiplication table for a number.
+- **ReverseNumber.java**: Reverse the digits of an integer.
+- **PrimeCheck.java**: Check whether a number is prime.
+- **FibonacciSequence.java**: Generate the Fibonacci sequence up to `n` terms.
+- **CountDigits.java**: Count the number of digits in a given integer.
+- **SumOfDigits.java**: Calculate the sum of the digits of a given number.
 
-3. **`PrintArray2.java`**  
-   - Prompt the user for an array and display its elements in a formatted manner.  
+### 3. **Thread**
+This package includes multithreading exercises, thread creation, and synchronization:
 
-4. **`PrintArray1.java`**  
-   - Demonstrates two methods to print a pre-defined array using `for` and `for-each` loops.  
+#### **HusbandWife**
+Simulating a bank account shared between a husband and wife:
+- **BankAccount.java**: Common bank account shared between threads.
+- **Husband.java**: Represents the husband accessing the shared account.
+- **Wife.java**: Represents the wife accessing the shared account.
+- **Main.java**: The main driver class.
 
-5. **`SearchElement.java`**  
-   - Search for a specific element in a pre-defined array based on user input.  
+#### **BankAccount**
+Simulating a bank account package:
+- **BankAccount.java**: Bank account implementation.
+- **Main.java**: Driver class for testing.
+- **InsufficientBalanceException.java**: Custom exception for insufficient balance.
 
-6. **`ReverseArray.java`**  
-   - Reverse the elements of an array using a loop.  
+#### **ProducerConsumer**
+Producer-Consumer problem implementation:
+- **ProducerConsumer.java**: Implementation of the producer-consumer problem.
+- **Source.java**: Shared resource between producer and consumer.
+- **Mother.java**: Represents the producer.
+- **Child.java**: Represents the consumer.
+- **Main.java**: Main driver class.
 
-7. **`CountEvenOdd.java`**  
-   - Count how many even and odd numbers are present in an array.  
+#### **ThreadGroup**
+Managing threads using thread groups:
+- **ThreadGroup.java**: Demonstrates thread group concepts.
+- **myRunnable.java**: Runnable task for thread group example.
 
-8. **`BubbleSort.java`**  
-   - Implement the Bubble Sort algorithm to sort an array in ascending order.  
+#### **Thread Creation and Synchronization**
+- **ConcurrentProgramWithMonitor.java**: Using monitors for concurrent programming.
+- **ConcurrentProgramWithReentrantLock.java**: Using `ReentrantLock` for synchronization.
+- **CreateThread1.java**: Creating a thread using `extends Thread`.
+- **CreateThread2.java**: Creating a thread using `implements Runnable`.
+- **CreateThread3.java**: Creating a thread using a lambda function.
+- **Lamda.java**: Thread creation with lambda expressions.
+- **LamdaBlock.java**: Block-level lambda thread implementation.
+- **ReentrantLock.java**: Demonstrates the use of `ReentrantLock` for thread synchronization.
+- **ThreadState.java**: Analyzing different thread states.
 
-9. **`FindSecondLargest.java`**  
-   - Find the second largest number in an array without sorting.  
 
----
-
-### **Package: Thread**  
-Contains exercises to practice multithreading concepts such as thread creation, synchronization, and concurrent tasks.  
-
-#### **Classes**  
-1. **`CreateThread1.java`**  
-   - Demonstrates thread creation by extending the `Thread` class.  
-
-2. **`CreateThread2.java`**  
-   - Demonstrates thread creation by implementing the `Runnable` interface.  
-
-3. **`CreateThread3.java`**  
-   - Demonstrates thread creation using a lambda function.  
-
-#### **Sub-Package: HusbandWife**  
-Simulates a real-world scenario where multiple threads (husband and wife) access a common bank account.  
-
-1. **`BankAccount.java`**  
-   - Represents a shared bank account with synchronized methods to ensure thread safety.  
-
-2. **`Husband.java`**  
-   - A thread class that simulates a husband withdrawing money from the account.  
-
-3. **`Wife.java`**  
-   - A thread class that simulates a wife depositing money into the account.  
-
-4. **`Main.java`**  
-   - The main driver class to execute the threads and simulate concurrent access to the shared bank account.  
+## Topics Covered
+- Arrays and Loops
+- Multithreading and Synchronization
+- Thread States and Management
+- Producer-Consumer Problem
+- Custom Exceptions
+- Advanced Locking Mechanisms
 
 ---
 
