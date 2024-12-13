@@ -53,7 +53,11 @@ public class BankAccount {
                 System.out.println(Thread.currentThread().getName() + " Withdraw successful, Account ID: " + this.accountId);
                 transactionHistory.add("Account ID: " + this.accountId + " withdraw successful, Amount: " + amount);
             } else {
-                throw new insufficientBalanceException("Insufficient funds to withdraw");
+                try {
+                    throw new insufficientBalanceException("Insufficient funds to withdraw");
+                } catch (insufficientBalanceException e) {
+                    throw new RuntimeException(e);
+                }
             }
         } finally {
             writeLock.unlock();
@@ -96,7 +100,11 @@ public class BankAccount {
                 System.out.println(Thread.currentThread().getName() + " Transfer successful from " + this.accountId + " to " + toAccount.accountId);
                 transactionHistory.add("Transferred " + amount + " from Account ID: " + this.accountId + " to Account ID: " + toAccount.accountId);
             } else {
-                throw new insufficientBalanceException("Insufficient funds for transfer");
+                try {
+                    throw new insufficientBalanceException("Insufficient funds for transfer");
+                } catch (insufficientBalanceException e) {
+                    throw new RuntimeException(e);
+                }
             }
         } finally {
             firstLock.writeLock.unlock();

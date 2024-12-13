@@ -33,9 +33,11 @@ class sharedResources {
 }
 class sharedResourcesUser extends Thread {
     private final sharedResources sharedResources;
+
     public sharedResourcesUser(sharedResources sharedResources) {
         this.sharedResources = sharedResources;
     }
+
     @Override
     public void run() {
         try {
