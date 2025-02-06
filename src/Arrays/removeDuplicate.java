@@ -1,26 +1,24 @@
 package Arrays;
 
-import java.util.Scanner;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class removeDuplicate {
-    public static void main (String[] args){
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Enter Array Length: ");
-        int arrayLength = input.nextInt();
-
-        if (arrayLength <= 0) {
-            System.out.println("Invalid array length. Exiting program.");
-            input.close();
-            return;
+    public static int[] removeDuplicates(int[] arr) {
+        Set<Integer> set = new LinkedHashSet<>(); // Preserves order
+        for (int num : arr) {
+            set.add(num);
         }
 
-        int[] array = new int[arrayLength];
+        // Convert Set to array
+        return set.stream().mapToInt(Integer::intValue).toArray();
+    }
 
-        for (int i = 0; i < arrayLength; i++) {
-            System.out.print("Enter element no " + (i + 1) + ": ");
-            array[i] = input.nextInt();
-        }
+    public static void main(String[] args) {
+        int[] input = {1, 2, 2, 3, 4, 4, 5};
+        int[] output = removeDuplicates(input);
+
+        System.out.println(Arrays.toString(output)); // Output: [1, 2, 3, 4, 5]
     }
 }
-
